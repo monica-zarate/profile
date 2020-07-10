@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
 }
 
-.flex-center {
+.flex-center, .about__details-wrapper, .about__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,6 +44,94 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about {
+  width: 50rem;
+  height: 45rem;
+  margin: 0 auto;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+}
+
+.about__info-wrapper {
+  width: 60%;
+  margin: 0 0 2rem 0;
+}
+
+.about__title {
+  font-family: "Roboto Bold";
+  font-size: 3rem;
+  text-align: right;
+}
+
+.about__img-wrapper {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 2rem 0;
+}
+
+.about__img {
+  width: 10rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 5px 0 #6d6875;
+          box-shadow: 0 5px 5px 0 #6d6875;
+}
+
+.about__description {
+  font-family: "Roboto Slab Regular";
+  font-size: 1.25rem;
+}
+
+.about__details-wrapper {
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0 5px 5px 0 #6d6875;
+          box-shadow: 0 5px 5px 0 #6d6875;
+  border-radius: 10px;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.about__subtitle {
+  font-family: "Roboto Medium";
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.about__list {
+  list-style: none;
+  width: 100%;
+}
+
+.about__details, .about__content {
+  text-align: center;
+  font-family: "Roboto Slab Regular";
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
 }
 
 @font-face {

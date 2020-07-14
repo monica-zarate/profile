@@ -50,9 +50,9 @@ function About() {
           </li>
 
           <li className="about__details">
-            <img className="about__card-img more" src={more} alt="" />
-            <h3 className="about__card-title more">More</h3>
-            <p className="about__card-content more">
+            <img className="about__card-img" src={more} alt="" />
+            <h3 className="about__card-title">More</h3>
+            <p className="about__card-content">
               Excited to make a career transition to the software development
               industry looking for new challenges and professional development.
             </p>

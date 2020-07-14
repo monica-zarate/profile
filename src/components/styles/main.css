@@ -228,15 +228,47 @@ body {
 
 .projects {
   padding: 2rem;
-  width: 70rem;
-  height: 30rem;
+  border: 1px solid #000000;
+  width: 60rem;
+  height: 100rem;
   margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .projects__title {
   font-family: "Roboto Medium";
   font-size: 2rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  color: #1d3557;
+}
+
+.projects__subtitle {
+  font-family: "Roboto Medium";
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.projects__img {
+  height: 30rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.projects__read {
+  font-family: "Roboto Slab Regular";
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projects__description {
+  font-family: "Roboto Slab Regular";
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
   text-align: center;
 }
 

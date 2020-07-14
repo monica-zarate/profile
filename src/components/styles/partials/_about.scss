@@ -1,7 +1,8 @@
+// About Component Styles
+
 .about {
-  width: 50rem;
-  height: 45rem;
-  //   border: 1px solid $primary-color;
+  width: 60rem;
+  height: 55rem;
   margin: 0 auto;
 
   &__wrapper {
@@ -10,7 +11,6 @@
     align-items: flex-end;
     justify-content: center;
     padding: 1rem;
-    margin: 0 0 2rem 0;
   }
 
   &__info-wrapper {
@@ -22,6 +22,7 @@
     font-family: $bold;
     font-size: 3rem;
     text-align: right;
+    color: $title;
   }
 
   &__img-wrapper {
@@ -45,32 +46,74 @@
 
   &__details-wrapper {
     @extend .flex-center;
-    border: 1px solid $primary-color;
-    box-shadow: 0 5px 5px 0 $secondary-color;
-    border-radius: 10px;
-    width: 25rem;
-    height: 25rem;
-    margin: 0 auto;
-    padding: 1rem;
+    width: 60rem;
+    height: 33rem;
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem;
   }
 
   &__subtitle {
     font-family: $medium;
     font-size: 2rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
+    color: $title;
   }
 
   &__list {
     list-style: none;
-    @extend .flex-center;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
 
   &__details,
   &__content {
-    text-align: center;
     font-family: $slab-regular;
     margin: 0 0 1rem 0;
     font-size: 1.25rem;
   }
+
+  &__details {
+    border: 1px solid $secondary-color;
+    box-shadow: 0 5px 5px 0 $secondary-color;
+    border-radius: 10px;
+    width: 18rem;
+    height: 23rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+  }
+
+  &__card-title {
+    font-family: $slab-medium;
+    font-size: 2rem;
+    width: 12rem;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+    color: $title;
+  }
+
+  &__card-list {
+    list-style: square;
+    list-style-position: inside;
+  }
+
+  &__card-content {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  &__card-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0 1rem 0;
+  }
 }
+
+// .more {
+//   margin: 0 auto;
+//   justify-content: center;
+// }

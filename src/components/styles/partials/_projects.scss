@@ -1,0 +1,17 @@
+// Projects Component Styles
+
+.projects {
+  padding: 2rem;
+  //   border: 1px solid $primary-color;
+  width: 70rem;
+  height: 30rem;
+  margin: 0 auto;
+  @extend .flex-center;
+
+  &__title {
+    font-family: $medium;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,38 @@
+// Content Component Styles
+
+.contact {
+  width: 60rem;
+  height: 7rem;
+  margin: 0 auto;
+  @extend .flex-center;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  &__links {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__url {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.bs {
+  display: none;
+}

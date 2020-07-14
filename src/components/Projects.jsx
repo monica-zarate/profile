@@ -15,7 +15,7 @@ function Projects() {
         the same household, remain involved with all the chores and activities
         that need to be done to keep a healthy home environment.
       </p>
-      <p className="projects__read">Read more...</p>
+      <button className="projects__read">Read more...</button>
       <p className="projects__description">
         Users can be linked and select the chores and/or activities they want to
         take care of per week, the app will schedule it and will be sending
@@ -25,7 +25,7 @@ function Projects() {
         at the end of the week, will gain a badge and will be eligible for a
         symbolic reward the household can agree upon beginning of the week.
       </p>
-      <p className="projects__read">Watch my demo</p>
+      <button className="projects__read">Watch my demo</button>
       <iframe
         className="projects__video"
         width="640"

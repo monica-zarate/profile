@@ -7,6 +7,26 @@ import lap from "../assets/icons/laptop.svg";
 import more from "../assets/icons/more.svg";
 
 function About() {
+  // Toggle About Section
+  let aboutDisplay = () => {
+    let about = document.getElementsByClassName("about__list")[0];
+    if (about.style.display === "flex") {
+      about.style.display = "none";
+    } else {
+      about.style.display = "flex";
+    }
+  };
+
+  // Toggle Portfolio Section
+  let projectsDisplay = () => {
+    let projects = document.getElementsByClassName("projects")[0];
+    if (projects.style.display === "flex") {
+      projects.style.display = "none";
+    } else {
+      projects.style.display = "flex";
+    }
+  };
+
   return (
     <div className="about">
       <div className="about__wrapper">
@@ -26,7 +46,9 @@ function About() {
       </div>
       <Contact />
       <div className="about__details-wrapper">
-        <button className="about__btn">About me</button>
+        <button className="about__btn" onClick={aboutDisplay}>
+          About me
+        </button>
         <ul className="about__list">
           <li className="about__details">
             <img className="about__card-img" src={edu} alt="" />
@@ -59,7 +81,9 @@ function About() {
           </li>
         </ul>
       </div>
-      <button className="about__btn">Portfolio</button>
+      <button className="about__btn" onClick={projectsDisplay}>
+        Portfolio
+      </button>
     </div>
   );
 }

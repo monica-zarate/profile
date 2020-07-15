@@ -6,6 +6,28 @@ import doing from "../assets/icons/doing.svg";
 import done from "../assets/icons/done.svg";
 
 function Projects() {
+  // Toggle Read More Section
+  let readMore = () => {
+    let moreWrapper = document.getElementsByClassName(
+      "projects__more-wrapper"
+    )[0];
+    if (moreWrapper.style.display === "flex") {
+      moreWrapper.style.display = "none";
+    } else {
+      moreWrapper.style.display = "flex";
+    }
+  };
+
+  // Toggle Demo Video
+  let demoDisplay = () => {
+    let video = document.getElementsByClassName("projects__video")[0];
+    if (video.style.display === "block") {
+      video.style.display = "none";
+    } else {
+      video.style.display = "block";
+    }
+  };
+
   return (
     <div className="projects">
       <h2 className="projects__title">
@@ -21,7 +43,9 @@ function Projects() {
           activities that need to be done to keep a healthy home environment.
         </p>
       </div>
-      <button className="projects__btns">Read more...</button>
+      <button className="projects__btns" onClick={readMore}>
+        Read more...
+      </button>
       <ul className="projects__more-wrapper">
         <li className="projects__more">
           <img className="projects__icon" src={team} alt="" />
@@ -48,7 +72,9 @@ function Projects() {
           </p>
         </li>
       </ul>
-      <button className="projects__btns">Watch my demo</button>
+      <button className="projects__btns" onClick={demoDisplay}>
+        Watch my demo
+      </button>
       <iframe
         className="projects__video"
         width="640"

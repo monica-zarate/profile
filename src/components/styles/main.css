@@ -19,10 +19,11 @@ body {
 
 .App {
   background-image: url("/imgs/background.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   padding: 3rem;
+  height: 2000px;
 }
 
 .container {
@@ -48,8 +49,10 @@ body {
 
 .about {
   width: 60rem;
-  height: 58rem;
   margin: 0 auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .about__wrapper {
@@ -107,7 +110,6 @@ body {
 
 .about__details-wrapper {
   width: 60rem;
-  height: 33rem;
   margin: 0 auto 1.5rem auto;
   padding: 1.5rem;
 }
@@ -126,13 +128,16 @@ body {
   color: #edeff5;
   background-color: #1d3557;
   width: 12rem;
+  outline: none;
+}
+
+.about__btn:hover {
+  font-family: "Roboto Bold";
 }
 
 .about__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -240,11 +245,11 @@ body {
 .projects {
   padding: 1.5rem;
   width: 60rem;
-  height: 120rem;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: none;
 }
 
 .projects__title {
@@ -294,6 +299,11 @@ body {
   color: #edeff5;
   background-color: #1d3557;
   width: 15rem;
+  outline: none;
+}
+
+.projects__btns:hover {
+  font-family: "Roboto Bold";
 }
 
 .projects__description {
@@ -311,13 +321,12 @@ body {
 
 .projects__more-wrapper {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin: 0 0 2rem 0;
 }
 
 .projects__more {
@@ -354,6 +363,10 @@ body {
 .projects__details {
   font-family: "Roboto Slab Regular";
   text-align: center;
+}
+
+.projects__video {
+  display: none;
 }
 
 @font-face {

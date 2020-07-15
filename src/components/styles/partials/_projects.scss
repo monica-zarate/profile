@@ -3,10 +3,10 @@
 .projects {
   padding: 1.5rem;
   width: 60rem;
-  height: 120rem;
   margin: 0 auto;
   @extend .flex-center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  display: none;
 
   &__title {
     font-family: $medium;
@@ -48,6 +48,11 @@
     color: $background-primary;
     background-color: $title;
     width: 15rem;
+    outline: none;
+
+    &:hover {
+      font-family: $bold;
+    }
   }
 
   &__description {
@@ -64,9 +69,10 @@
 
   &__more-wrapper {
     list-style: none;
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 100%;
+    margin: 0 0 2rem 0;
   }
 
   &__more {
@@ -93,5 +99,9 @@
   &__details {
     font-family: $slab-regular;
     text-align: center;
+  }
+
+  &__video {
+    display: none;
   }
 }

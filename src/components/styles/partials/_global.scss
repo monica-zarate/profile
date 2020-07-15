@@ -20,10 +20,11 @@ body {
 
 .App {
   background-image: url("/imgs/background.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   padding: 3rem;
+  height: 2000px;
 }
 
 // Utility Classes

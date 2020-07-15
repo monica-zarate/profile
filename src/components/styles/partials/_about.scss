@@ -2,9 +2,9 @@
 
 .about {
   width: 60rem;
-  height: 58rem;
   margin: 0 auto;
   @extend .flex-center;
+  justify-content: flex-start;
 
   &__wrapper {
     display: flex;
@@ -48,7 +48,6 @@
   &__details-wrapper {
     @extend .flex-center;
     width: 60rem;
-    height: 33rem;
     margin: 0 auto 1.5rem auto;
     padding: 1.5rem;
   }
@@ -66,11 +65,16 @@
     color: $background-primary;
     background-color: $title;
     width: 12rem;
+    outline: none;
+
+    &:hover {
+      font-family: $bold;
+    }
   }
 
   &__list {
     list-style: none;
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 100%;
   }

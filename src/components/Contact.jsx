@@ -20,7 +20,7 @@ function Contact() {
           </a>
         </li>
         <li className="contact__links">
-          <a className="contact__url" href="mailto:monicazhazil@gmail.com">
+          <a className="contact__url" href="mailto:hello@monicazarate.com">
             <img className="contact__icon" src={mail} alt="Email-icon" />
           </a>
         </li>

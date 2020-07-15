@@ -26,7 +26,7 @@ function About() {
       </div>
       <Contact />
       <div className="about__details-wrapper">
-        <h2 className="about__subtitle">About me</h2>
+        <button className="about__btn">About me</button>
         <ul className="about__list">
           <li className="about__details">
             <img className="about__card-img" src={edu} alt="" />
@@ -59,6 +59,7 @@ function About() {
           </li>
         </ul>
       </div>
+      <button className="about__btn">Portfolio</button>
     </div>
   );
 }

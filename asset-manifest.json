@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d49a1937.chunk.css",
-    "main.js": "/static/js/main.cb1b6cfc.chunk.js",
-    "main.js.map": "/static/js/main.cb1b6cfc.chunk.js.map",
+    "main.css": "/static/css/main.06ea0568.chunk.css",
+    "main.js": "/static/js/main.926b58e8.chunk.js",
+    "main.js.map": "/static/js/main.926b58e8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc36b19e.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc36b19e.js.map",
-    "static/js/2.7d9cd82b.chunk.js": "/static/js/2.7d9cd82b.chunk.js",
-    "static/js/2.7d9cd82b.chunk.js.map": "/static/js/2.7d9cd82b.chunk.js.map",
+    "static/js/2.291cfb08.chunk.js": "/static/js/2.291cfb08.chunk.js",
+    "static/js/2.291cfb08.chunk.js.map": "/static/js/2.291cfb08.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1be253b4f55d1543ca417142c47ac054.js": "/precache-manifest.1be253b4f55d1543ca417142c47ac054.js",
+    "precache-manifest.4917f2488ac9cea6fd016d5a366fec2a.js": "/precache-manifest.4917f2488ac9cea6fd016d5a366fec2a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d49a1937.chunk.css.map": "/static/css/main.d49a1937.chunk.css.map",
-    "static/js/2.7d9cd82b.chunk.js.LICENSE.txt": "/static/js/2.7d9cd82b.chunk.js.LICENSE.txt",
+    "static/css/main.06ea0568.chunk.css.map": "/static/css/main.06ea0568.chunk.css.map",
+    "static/js/2.291cfb08.chunk.js.LICENSE.txt": "/static/js/2.291cfb08.chunk.js.LICENSE.txt",
     "static/media/app.png": "/static/media/app.69ed6150.png",
+    "static/media/doing.svg": "/static/media/doing.6110b455.svg",
+    "static/media/done.svg": "/static/media/done.586b9213.svg",
     "static/media/edu.svg": "/static/media/edu.97ec4fb6.svg",
     "static/media/github.svg": "/static/media/github.ddc25012.svg",
     "static/media/laptop.svg": "/static/media/laptop.f41e3529.svg",
@@ -22,12 +24,13 @@
     "static/media/mz2.jpg": "/static/media/mz2.54262e53.jpg",
     "static/media/pdf.svg": "/static/media/pdf.e98f4e1b.svg",
     "static/media/main.css": "/static/media/robotoslab-regular.f7ffac60.ttf",
+    "static/media/team.svg": "/static/media/team.6bb34387.svg",
     "static/media/twitter.svg": "/static/media/twitter.7e145c9e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc36b19e.js",
-    "static/js/2.7d9cd82b.chunk.js",
-    "static/css/main.d49a1937.chunk.css",
-    "static/js/main.cb1b6cfc.chunk.js"
+    "static/js/2.291cfb08.chunk.js",
+    "static/css/main.06ea0568.chunk.css",
+    "static/js/main.926b58e8.chunk.js"
   ]
 }

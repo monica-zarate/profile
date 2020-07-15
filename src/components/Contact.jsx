@@ -14,7 +14,7 @@ function Contact() {
         <li className="contact__links">
           <a
             className="contact__url"
-            href="https://drive.google.com/file/d/10H1S4KkURR4khNIT1r6BqSJFJMrwARVI/view?usp=sharing"
+            href="https://drive.google.com/file/d/1elMeC0qioHfMuqLiycD5NU7QlLDcF5rt/view?usp=sharing"
           >
             <img className="contact__icon" src={pdf} alt="pdf-icon" />
           </a>

@@ -2,20 +2,16 @@
 
 .contact {
   margin: 0 auto;
-  // @extend .flex-center;
-  width: 18rem;
-
-  @include tablet {
-    width: 60rem;
-    height: 7rem;
-  }
+  max-width: 28rem;
+  height: 5rem;
+  width: 100%;
 
   &__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7rem;
+    height: 5rem;
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem;

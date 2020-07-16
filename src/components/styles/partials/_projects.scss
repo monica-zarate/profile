@@ -2,12 +2,13 @@
 
 .projects {
   @extend .flex-center;
-  width: 18rem;
+  min-width: 18rem;
+  max-width: 28rem;
+  margin: 0 auto;
 
   @include tablet {
-    padding: 1.5rem;
-    width: 60rem;
-    margin: 0 auto;
+    min-width: 42rem;
+    max-width: 60rem;
     justify-content: flex-start;
     display: none;
   }
@@ -17,29 +18,32 @@
     margin: 0 0 1.5rem 0;
     text-align: center;
     color: $title;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     @include tablet {
-      // font-size: 2rem;
+      font-size: 2rem;
     }
   }
 
   &__subtitle {
     font-family: $slab-medium;
     font-size: 2rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 2rem 0;
     text-align: center;
   }
 
   &__wrapper {
     width: 20rem;
     @extend .flex-center;
-    height: 64rem;
+    height: 66rem;
     justify-content: space-between;
     margin: 0 0 2rem 0;
+    padding: 1.5rem;
 
     @include tablet {
-      width: 60rem;
+      min-width: 46rem;
+      flex-direction: row;
+      height: unset;
     }
   }
 
@@ -75,13 +79,14 @@
     border: 1px solid $secondary-color;
     box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
-    width: 18rem;
+    width: 15rem;
     height: 32rem;
-    padding: 2.5rem;
+    padding: 1rem;
 
     @include tablet {
       width: 20rem;
       height: 28rem;
+      padding: 3rem 2rem;
     }
   }
 
@@ -89,28 +94,39 @@
     list-style: none;
     @extend .flex-center;
     display: none;
-    height: 88rem;
     justify-content: space-between;
     width: 100%;
     margin: 0 0 2rem 0;
+
+    @include tablet {
+      flex-direction: row;
+      padding: 1.5rem;
+    }
   }
 
   &__more {
     border: 1px solid $secondary-color;
     box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
-    width: 18rem;
+    width: 100%;
     height: 28rem;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
     font-size: 1.5rem;
+    margin: 1rem 0;
 
     @include tablet {
-      justify-content: initial;
+      width: calc(100% / 3 - 1.5rem);
+      margin: 0 0.5rem 1.5rem 0.5rem;
+      height: 23rem;
+      font-size: 1rem;
+    }
+    @include desktop {
+      height: 30rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -127,7 +143,7 @@
 
   &__video {
     display: none;
-    width: 300px;
+    width: 18rem;
     height: 156.5px;
 
     @include tablet {

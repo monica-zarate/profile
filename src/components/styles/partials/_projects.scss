@@ -1,19 +1,27 @@
 // Projects Component Styles
 
 .projects {
-  padding: 1.5rem;
-  width: 60rem;
-  margin: 0 auto;
   @extend .flex-center;
-  justify-content: flex-start;
-  display: none;
+  width: 18rem;
+
+  @include tablet {
+    padding: 1.5rem;
+    width: 60rem;
+    margin: 0 auto;
+    justify-content: flex-start;
+    display: none;
+  }
 
   &__title {
     font-family: $medium;
-    font-size: 2rem;
     margin: 0 0 1.5rem 0;
     text-align: center;
     color: $title;
+    font-size: 2rem;
+
+    @include tablet {
+      // font-size: 2rem;
+    }
   }
 
   &__subtitle {
@@ -24,11 +32,15 @@
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 60rem;
-    margin: 0 0 3rem 0;
+    width: 20rem;
+    @extend .flex-center;
+    height: 64rem;
+    justify-content: space-between;
+    margin: 0 0 2rem 0;
+
+    @include tablet {
+      width: 60rem;
+    }
   }
 
   &__img {
@@ -49,9 +61,10 @@
     background-color: $title;
     width: 15rem;
     outline: none;
-
-    &:hover {
-      font-family: $bold;
+    @include tablet {
+      &:hover {
+        box-shadow: 5px 5px 5px 0 $primary-color;
+      }
     }
   }
 
@@ -62,14 +75,21 @@
     border: 1px solid $secondary-color;
     box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
-    width: 20rem;
-    height: 28rem;
+    width: 18rem;
+    height: 32rem;
     padding: 2.5rem;
+
+    @include tablet {
+      width: 20rem;
+      height: 28rem;
+    }
   }
 
   &__more-wrapper {
     list-style: none;
+    @extend .flex-center;
     display: none;
+    height: 88rem;
     justify-content: space-between;
     width: 100%;
     margin: 0 0 2rem 0;
@@ -84,10 +104,14 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: initial;
+    justify-content: center;
     align-items: center;
     margin: 0;
     font-size: 1.5rem;
+
+    @include tablet {
+      justify-content: initial;
+    }
   }
 
   &__icon {
@@ -103,5 +127,12 @@
 
   &__video {
     display: none;
+    width: 300px;
+    height: 156.5px;
+
+    @include tablet {
+      width: 640px;
+      height: 353px;
+    }
   }
 }

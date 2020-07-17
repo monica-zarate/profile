@@ -19,11 +19,11 @@ body {
 
 .App {
   background-image: url("/imgs/background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 2rem 1rem;
-  min-height: 1000px;
+  min-height: 100vh;
   min-width: 20rem;
   overflow: hidden;
 }
@@ -358,6 +358,7 @@ body {
 }
 
 .projects {
+  display: none;
   min-width: 18rem;
   max-width: 28rem;
   margin: 0 auto;

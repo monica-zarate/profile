@@ -2,6 +2,7 @@
 
 .projects {
   @extend .flex-center;
+  display: none;
   min-width: 18rem;
   max-width: 28rem;
   margin: 0 auto;

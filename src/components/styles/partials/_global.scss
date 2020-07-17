@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  height: 100vh;
+  min-height: 100%;
+}
 html,
 body {
   font-family: $regular;
@@ -23,6 +27,7 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   padding: 2rem 1rem;
   min-height: 100vh;
   min-width: 20rem;

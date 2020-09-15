@@ -19,11 +19,14 @@ function About() {
 
   // Toggle Portfolio Section
   let projectsDisplay = () => {
-    let projects = document.getElementsByClassName("projects")[0];
-    if (projects.style.display === "flex") {
-      projects.style.display = "none";
-    } else {
-      projects.style.display = "flex";
+    let projects = document.querySelectorAll(".projects");
+    for (let i = 0; i < projects.length; i++) {
+      let project = projects[i];
+      if (project.style.display === "flex") {
+        project.style.display = "none";
+      } else {
+        project.style.display = "flex";
+      }
     }
   };
 

@@ -2,6 +2,7 @@
 @import "./partials/fonts";
 @import "./partials/mixins";
 @import "./partials/global";
+@import "./partials/header";
 @import "./partials/about";
 @import "./partials/contact";
 @import "./partials/projects";
@@ -34,4 +35,9 @@
 @font-face {
   font-family: "Roboto Slab Bold";
   src: url("../../assets/fonts/robotoslab-bold.ttf");
+}
+
+@font-face {
+  font-family: "Laila Semi Bold";
+  src: url("../../assets/fonts/laila-semibold.ttf");
 }

@@ -1,0 +1,129 @@
+// Header Component Styles
+
+.header {
+  position: relative;
+  background-color: $header;
+  color: $content;
+  padding: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 18vh;
+
+  &__title-link {
+    margin: 0 0 0 40%;
+  }
+
+  &__title {
+    font-family: $laila;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    padding: 1rem 0;
+    text-align: center;
+    color: $content;
+  }
+
+  &__nav {
+    padding: 0 0 20rem 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    letter-spacing: 3px;
+    position: absolute;
+    right: 0px;
+    height: 82vh;
+    top: 18vh;
+    background-color: $header;
+    flex-direction: column;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 99;
+    overflow: hidden;
+
+    @include tablet {
+      position: unset;
+      right: unset;
+      top: unset;
+      transform: translateX(0);
+      flex-direction: row;
+      height: unset;
+      padding: 0;
+      width: unset;
+      margin: unset;
+    }
+  }
+
+  &__li {
+    font-family: $medium;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+    transition: 0.1s ease;
+    opacity: 0;
+    @keyframes nav-fade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+
+    @include tablet {
+      font-size: 1rem;
+      opacity: 1;
+      &:hover {
+        border-top: 4px solid $content;
+        border-bottom: 4px solid $content;
+        padding: 0.5rem 0;
+      }
+    }
+
+    @include desktop {
+      font-size: 1.5rem;
+      width: 8rem;
+    }
+  }
+
+  &__link {
+    color: $content;
+  }
+
+  &__burger * {
+    width: 25px;
+    height: 3px;
+    background-color: $content;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+// Burger Menu for Mobile
+
+.active {
+  transform: translateX(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

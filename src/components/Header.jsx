@@ -34,12 +34,12 @@ function Header() {
       </Link>
       <ul className="header__nav">
         <li className="header__li">
-          <Link to={`/about`} className="header__link">
+          <Link to={`/about`} className="header__link" onClick={navSlide}>
             About
           </Link>
         </li>
         <li className="header__li">
-          <Link to={`/projects`} className="header__link">
+          <Link to={`/projects`} className="header__link" onClick={navSlide}>
             Projects
           </Link>
         </li>

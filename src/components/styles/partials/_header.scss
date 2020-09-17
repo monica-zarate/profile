@@ -3,7 +3,7 @@
 .header {
   position: relative;
   background-color: $header;
-  color: $content;
+  color: $background-primary;
   padding: 1rem 2rem;
   width: 100%;
   display: flex;
@@ -29,7 +29,7 @@
     letter-spacing: 10px;
     padding: 1rem 0;
     text-align: center;
-    color: $content;
+    color: $background-primary;
 
     @include tablet {
       font-size: 2.5rem;
@@ -50,8 +50,8 @@
     letter-spacing: 3px;
     position: absolute;
     right: 0px;
-    height: 82vh;
-    top: 18vh;
+    height: 82.5vh;
+    top: 17.5vh;
     background-color: $header;
     flex-direction: column;
     width: 50%;
@@ -100,8 +100,8 @@
       margin: 0 0 0 2rem;
 
       &:hover {
-        border-top: 2px solid $content;
-        border-bottom: 2px solid $content;
+        border-top: 2px solid $background-primary;
+        border-bottom: 2px solid $background-primary;
         padding: 0.5rem 0;
       }
     }
@@ -112,13 +112,13 @@
   }
 
   &__link {
-    color: $content;
+    color: $background-primary;
   }
 
   &__burger * {
     width: 25px;
     height: 3px;
-    background-color: $content;
+    background-color: $background-primary;
     margin: 5px;
     cursor: pointer;
     transition: 0.3s ease;

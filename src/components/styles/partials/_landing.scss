@@ -1,0 +1,77 @@
+// Landing Component Styles
+
+.landing {
+  @extend .flex-center;
+  min-width: 18rem;
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+
+  @include tablet {
+    min-width: 42rem;
+    max-width: 60rem;
+    justify-content: flex-start;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+  }
+
+  &__info-wrapper {
+    width: 50%;
+    margin: 0 0 2rem 0;
+    @include tablet {
+      width: 60%;
+    }
+  }
+
+  &__title {
+    font-family: $bold;
+    text-align: right;
+    color: $header;
+    font-size: 2rem;
+
+    @include tablet {
+      font-size: 3rem;
+    }
+  }
+
+  &__img-wrapper {
+    width: 7.5rem;
+    margin: 0 0 2rem 0;
+    @extend .flex-center;
+
+    @include tablet {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    width: 7.5rem;
+
+    @include tablet {
+      width: 10rem;
+      border-radius: 5px;
+      box-shadow: 0 5px 5px 0 $secondary-color;
+    }
+  }
+
+  &__description {
+    font-family: $slab-regular;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}

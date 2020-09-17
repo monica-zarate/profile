@@ -86,7 +86,7 @@ function Projects() {
       </div>
       <div className="projects">
         <h2 className="projects__title">Photographer Portfolio</h2>
-        <h3 className="projects__subtitle">Cuau Fotografía</h3>
+        <h3 className="projects__subtitle">Cuau Retrato</h3>
         <div className="projects__wrapper">
           <img className="projects__img" src={cuau} alt="" />
 
@@ -97,7 +97,7 @@ function Projects() {
             Components.
           </p>
         </div>
-        <a href="https://cuaufotografia.netlify.app/">
+        <a target="_blank" href="https://cuaufotografia.netlify.app/">
           <button className="projects__btns">Visit Website</button>
         </a>
       </div>

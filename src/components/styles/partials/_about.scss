@@ -2,121 +2,31 @@
 
 .about {
   @extend .flex-center;
-  min-width: 18rem;
-  max-width: 28rem;
+  width: 18rem;
+  padding: 2rem 1.5rem;
   margin: 0 auto;
 
   @include tablet {
-    min-width: 42rem;
-    max-width: 60rem;
-    justify-content: flex-start;
+    width: 100%;
+    padding: 4rem;
+    margin: unset;
   }
 
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-evenly;
-
-    @include tablet {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-end;
-      padding: 1rem;
-    }
-  }
-
-  &__info-wrapper {
-    width: 50%;
-    margin: 0 0 2rem 0;
-    @include tablet {
-      width: 60%;
-    }
-  }
-
-  &__title {
-    font-family: $bold;
-    text-align: right;
-    color: $title;
-    font-size: 2rem;
-
-    @include tablet {
-      font-size: 3rem;
-    }
-  }
-
-  &__img-wrapper {
-    width: 7.5rem;
-    margin: 0 0 2rem 0;
-    @extend .flex-center;
-
-    @include tablet {
-      width: 25%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  &__img {
-    width: 7.5rem;
-
-    @include tablet {
-      width: 10rem;
-      border-radius: 5px;
-      box-shadow: 0 5px 5px 0 $secondary-color;
-    }
-  }
-
-  &__description {
-    font-family: $slab-regular;
-    font-size: 1.25rem;
-    text-align: center;
-  }
-
-  &__details-wrapper {
-    @extend .flex-center;
-    width: 18rem;
-    padding: 1.5rem;
-    margin: 0 auto 1.5rem auto;
-
-    @include tablet {
-      width: 100%;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-  }
-
-  &__btn {
-    font-family: $regular;
-    font-size: 1.5rem;
-    margin: 0 0 2rem 0;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid $secondary-color;
-    box-shadow: 0 5px 5px 0 $secondary-color;
-    border-radius: 10px;
-    padding: 1rem 1.5rem;
-    color: $background-primary;
-    background-color: $title;
-    width: 15rem;
-    outline: none;
-    @include tablet {
-      &:hover {
-        box-shadow: 5px 5px 5px 0 $primary-color;
-      }
-    }
+  @include desktop {
+    padding: 6rem;
   }
 
   &__list {
+    display: flex;
     list-style: none;
-    display: none;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
 
     @include tablet {
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 
@@ -127,7 +37,7 @@
   }
 
   &__details {
-    border: 1px solid $secondary-color;
+    border: 2px solid $header;
     box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
     width: 100%;
@@ -142,9 +52,8 @@
 
     @include tablet {
       justify-content: initial;
-      width: calc(100% / 3-1.5rem);
+      width: 18rem;
       height: 20rem;
-      margin: 0 1rem 1.5rem 1rem;
     }
 
     @include desktop {
@@ -157,7 +66,7 @@
     font-size: 2rem;
     margin: 0 auto 1rem auto;
     text-align: center;
-    color: $title;
+    color: $header;
 
     @include tablet {
       font-size: 1.5rem;

@@ -1,8 +1,8 @@
 // Projects Component Styles
 
 .projects {
+  border-bottom: 6px solid $header;
   @extend .flex-center;
-  display: none;
   min-width: 18rem;
   max-width: 28rem;
   margin: 0 auto;
@@ -12,14 +12,14 @@
     min-width: 42rem;
     max-width: 60rem;
     justify-content: flex-start;
-    display: none;
+    padding: 4rem;
   }
 
   &__title {
     font-family: $medium;
     margin: 0 0 1.5rem 0;
     text-align: center;
-    color: $title;
+    color: $header;
     font-size: 1.5rem;
 
     @include tablet {
@@ -43,7 +43,7 @@
     padding: 1.5rem;
 
     @include tablet {
-      min-width: 46rem;
+      min-width: 42rem;
       flex-direction: row;
       height: unset;
     }
@@ -59,17 +59,18 @@
     margin: 0 0 1.5rem 0;
     text-align: center;
     cursor: pointer;
-    border: 1px solid $secondary-color;
+    border: 1px solid $btns;
     box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
     padding: 1rem 1.5rem;
     color: $background-primary;
-    background-color: $title;
+    background-color: $btns;
     width: 15rem;
     outline: none;
     @include tablet {
       &:hover {
-        box-shadow: 5px 5px 5px 0 $primary-color;
+        background-color: $header;
+        border: 1px solid $header;
       }
     }
   }
@@ -78,7 +79,7 @@
     font-family: $slab-regular;
     font-size: 1.5rem;
     text-align: center;
-    border: 1px solid $secondary-color;
+    border: 2px solid $header;
     box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
     width: 15rem;
@@ -107,10 +108,10 @@
   }
 
   &__more {
-    border: 1px solid $secondary-color;
+    border: 2px solid $header;
     box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
-    width: 100%;
+    width: 80%;
     height: 28rem;
     padding: 1.5rem;
     display: flex;
@@ -118,7 +119,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 1rem;
 
     @include tablet {
       width: calc(100% / 3 - 1.5rem);

@@ -11,8 +11,16 @@
   align-items: center;
   min-height: 18vh;
 
+  @include tablet {
+    justify-content: space-evenly;
+  }
+
   &__title-link {
     margin: 0 0 0 40%;
+
+    @include tablet {
+      margin: 0;
+    }
   }
 
   &__title {
@@ -22,6 +30,14 @@
     padding: 1rem 0;
     text-align: center;
     color: $content;
+
+    @include tablet {
+      font-size: 2.5rem;
+    }
+
+    @include desktop {
+      font-size: 3rem;
+    }
   }
 
   &__nav {
@@ -52,8 +68,9 @@
       flex-direction: row;
       height: unset;
       padding: 0;
-      width: unset;
       margin: unset;
+      justify-content: flex-end;
+      width: 40%;
     }
   }
 
@@ -79,16 +96,18 @@
     @include tablet {
       font-size: 1rem;
       opacity: 1;
+      width: unset;
+      margin: 0 0 0 2rem;
+
       &:hover {
-        border-top: 4px solid $content;
-        border-bottom: 4px solid $content;
+        border-top: 2px solid $content;
+        border-bottom: 2px solid $content;
         padding: 0.5rem 0;
       }
     }
 
     @include desktop {
       font-size: 1.5rem;
-      width: 8rem;
     }
   }
 

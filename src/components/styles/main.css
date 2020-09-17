@@ -35,7 +35,6 @@ body {
 
 @media (min-width: 768px) {
   .App {
-    padding: 3rem;
     min-width: 768px;
   }
 }
@@ -85,8 +84,22 @@ body {
   min-height: 18vh;
 }
 
+@media (min-width: 768px) {
+  .header {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .header__title-link {
   margin: 0 0 0 40%;
+}
+
+@media (min-width: 768px) {
+  .header__title-link {
+    margin: 0;
+  }
 }
 
 .header__title {
@@ -96,6 +109,18 @@ body {
   padding: 1rem 0;
   text-align: center;
   color: #eafae3;
+}
+
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__title {
+    font-size: 3rem;
+  }
 }
 
 .header__nav {
@@ -144,8 +169,11 @@ body {
             flex-direction: row;
     height: unset;
     padding: 0;
-    width: unset;
     margin: unset;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 40%;
   }
 }
 
@@ -190,10 +218,12 @@ body {
   .header__li {
     font-size: 1rem;
     opacity: 1;
+    width: unset;
+    margin: 0 0 0 2rem;
   }
   .header__li:hover {
-    border-top: 4px solid #eafae3;
-    border-bottom: 4px solid #eafae3;
+    border-top: 2px solid #eafae3;
+    border-bottom: 2px solid #eafae3;
     padding: 0.5rem 0;
   }
 }
@@ -201,7 +231,6 @@ body {
 @media (min-width: 1440px) {
   .header__li {
     font-size: 1.5rem;
-    width: 8rem;
   }
 }
 

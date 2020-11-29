@@ -1,0 +1,39 @@
+//Stack Component Styles
+.stack {
+  margin: 0 auto;
+  max-width: 28rem;
+  width: 100%;
+
+  @include tablet {
+    max-width: 36rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+
+    @include tablet {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.node {
+  width: unset;
+}
+
+.mysql {
+  height: unset;
+}

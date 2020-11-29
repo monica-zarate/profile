@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/main.css";
 import Contact from "./Contact";
+import Stack from "./Stack";
 import mz from "../assets/imgs/mz2.jpg";
 
 function About() {
@@ -22,6 +23,7 @@ function About() {
         </p>
       </div>
       <Contact />
+      <Stack/>
     </div>
   );
 }

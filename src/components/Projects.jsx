@@ -41,7 +41,7 @@ function Projects() {
           <p className="projects__description">
             Happy House is a collaborative platform that will help people living
             on the same household, remain involved with all the chores and
-            activities that need to be done to keep a healthy home environment.
+            activities that need to be done to keep a healthy home environment. Built with React and Sass.
           </p>
         </div>
         <button className="projects__btns" onClick={readMore}>
@@ -95,7 +95,7 @@ function Projects() {
             Mexico City-based photographer, showcasing its outdoor and in-studio
             portraits. With a creative setting in mind, the models are always
             shining. The website contains a Gallery, Contact and About
-            Components.
+            Components. Built with React and Sass.
           </p>
         </div>
         <a target="_blank" href="https://cuaufotografia.netlify.app/">
@@ -109,7 +109,7 @@ function Projects() {
           <img className="projects__img" src={beat} alt="" />
 
           <p className="projects__description ">
-            Beatmaker allows you to play with three sound effects, looping the sounds and playing the selected ones, increasing or decreasing the tempo speed. Each sound effect has from two to three variations, and they can also be muted. 
+            Beatmaker allows you to play with three sound effects, looping the sounds and playing the selected ones, increasing or decreasing the tempo speed. Each sound effect has from two to three variations, and they can also be muted. Built with Javascript and CSS.
           </p>
         </div>
         <a target="_blank" href="https://monicabeatmaker.netlify.app/">

@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/main.css";
 import happyhouse from "../assets/imgs/app.png";
 import cuau from "../assets/imgs/cuau-photo.png";
+import beat from "../assets/imgs/beat.png";
 import team from "../assets/icons/team.svg";
 import doing from "../assets/icons/doing.svg";
 import done from "../assets/icons/done.svg";
@@ -98,6 +99,20 @@ function Projects() {
           </p>
         </div>
         <a target="_blank" href="https://cuaufotografia.netlify.app/">
+          <button className="projects__btns">Visit Website</button>
+        </a>
+      </div>
+      <div className="projects">
+        <h2 className="projects__title">Vanilla Javascript Project</h2>
+        <h3 className="projects__subtitle">Beatmaker</h3>
+        <div className="projects__wrapper desktop">
+          <img className="projects__img" src={beat} alt="" />
+
+          <p className="projects__description ">
+            Beatmaker allows you to play with three sound effects, looping the sounds and playing the selected ones, increasing or decreasing the tempo speed. Each sound effect has from two to three variations, and they can also be muted. 
+          </p>
+        </div>
+        <a target="_blank" href="https://monicabeatmaker.netlify.app/">
           <button className="projects__btns">Visit Website</button>
         </a>
       </div>

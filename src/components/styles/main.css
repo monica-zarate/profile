@@ -649,9 +649,6 @@ body {
   font-family: "Roboto Slab Regular";
   font-size: 1.5rem;
   text-align: center;
-  border: 2px solid #2b2d42;
-  -webkit-box-shadow: 0 5px 5px 0 #6d6875;
-          box-shadow: 0 5px 5px 0 #6d6875;
   border-radius: 10px;
   width: 15rem;
   height: 32rem;
@@ -748,6 +745,38 @@ body {
   .projects__video {
     width: 640px;
     height: 353px;
+  }
+}
+
+.desktop img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop img {
+    display: block;
+    width: 40rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop p {
+    width: 40rem;
+    height: unset;
+  }
+}
+
+.desktop {
+  height: unset;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

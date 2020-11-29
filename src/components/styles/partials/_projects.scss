@@ -79,8 +79,6 @@
     font-family: $slab-regular;
     font-size: 1.5rem;
     text-align: center;
-    border: 2px solid $header;
-    box-shadow: 0 5px 5px 0 $secondary-color;
     border-radius: 10px;
     width: 15rem;
     height: 32rem;
@@ -153,5 +151,30 @@
       width: 640px;
       height: 353px;
     }
+  }
+}
+
+.desktop img {
+  display: none;
+
+  @include tablet {
+    display: block;
+    width: 40rem;
+  }
+}
+
+.desktop p {
+  @include tablet {
+    width: 40rem;
+    height: unset;
+  }
+}
+
+.desktop {
+  height: unset;
+
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

@@ -30,7 +30,7 @@ function Header() {
   return (
     <div className="header">
       <Link to={`/`} className="header__title-link">
-        <h1 className="header__title">MZ</h1>
+        <h1 className="header__title">MZ </h1>
       </Link>
       <ul className="header__nav">
         <li className="header__li">

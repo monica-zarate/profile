@@ -98,7 +98,7 @@ function Projects() {
             Components. Built with React and Sass.
           </p>
         </div>
-        <a target="_blank" href="https://cuaufotografia.netlify.app/">
+        <a target="_blank" href="https://cuauretrato.netlify.app/">
           <button className="projects__btns">Visit Website</button>
         </a>
       </div>
